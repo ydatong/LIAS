@@ -1,1 +1,1 @@
-### Life is a Straggle
+### Life is a Struggle

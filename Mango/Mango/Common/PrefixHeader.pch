@@ -1,0 +1,22 @@
+//
+//  PrefixHeader.pch
+//  Mango
+//
+//  Created by 周永 on 16/10/20.
+//  Copyright © 2016年 shuige. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+
+//define
+#define AppWindow [UIApplication sharedApplication].keyWindow
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenBounds [UIScreen mainScreen].bounds
+
+//import
+#import "UIView+Mango.h"
+
+#endif /* PrefixHeader_pch */

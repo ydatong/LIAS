@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25B394EF1DB8FE8200F86EF1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B394EE1DB8FE8200F86EF1 /* main.m */; };
+		25B394FB1DB8FE8200F86EF1 /* Mango.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 25B394F91DB8FE8200F86EF1 /* Mango.xcdatamodeld */; };
+		25B394FD1DB8FE8200F86EF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25B394FC1DB8FE8200F86EF1 /* Assets.xcassets */; };
+		25B395001DB8FE8200F86EF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 25B394FE1DB8FE8200F86EF1 /* LaunchScreen.storyboard */; };
+		25B3950B1DB8FE8200F86EF1 /* MangoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B3950A1DB8FE8200F86EF1 /* MangoTests.m */; };
+		25B395161DB8FE8200F86EF1 /* MangoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395151DB8FE8200F86EF1 /* MangoUITests.m */; };
+		25B395361DB8FF9400F86EF1 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395251DB8FF9400F86EF1 /* AppDelegate.m */; };
+		25B395391DB900C700F86EF1 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395381DB900C700F86EF1 /* BaseNavigationController.m */; };
+		25B3953C1DB900D700F86EF1 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B3953B1DB900D700F86EF1 /* BaseViewController.m */; };
+		25B395481DB905FE00F86EF1 /* tab_timer@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B395441DB905FE00F86EF1 /* tab_timer@2x.png */; };
+		25B395491DB905FE00F86EF1 /* tab_todo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B395451DB905FE00F86EF1 /* tab_todo@2x.png */; };
+		25B3954D1DB9084200F86EF1 /* tab_note@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B3954B1DB9084200F86EF1 /* tab_note@2x.png */; };
+		25B3954E1DB9084200F86EF1 /* tab_set@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B3954C1DB9084200F86EF1 /* tab_set@2x.png */; };
+		25B395501DB90E8800F86EF1 /* launch.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 25B3954F1DB90E8800F86EF1 /* launch.jpg */; };
+		25B395541DB90EE600F86EF1 /* TodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395521DB90EE600F86EF1 /* TodoViewController.m */; };
+		25B395551DB90EE600F86EF1 /* TodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B395531DB90EE600F86EF1 /* TodoViewController.xib */; };
+		25B395591DB90EF500F86EF1 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395571DB90EF500F86EF1 /* NoteViewController.m */; };
+		25B3955A1DB90EF500F86EF1 /* NoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B395581DB90EF500F86EF1 /* NoteViewController.xib */; };
+		25B3955E1DB90F0800F86EF1 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B3955C1DB90F0800F86EF1 /* TimerViewController.m */; };
+		25B3955F1DB90F0800F86EF1 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B3955D1DB90F0800F86EF1 /* TimerViewController.xib */; };
+		25B395631DB90F1400F86EF1 /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395611DB90F1400F86EF1 /* SettingViewController.m */; };
+		25B395641DB90F1400F86EF1 /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B395621DB90F1400F86EF1 /* SettingViewController.xib */; };
+		25B395681DB917D300F86EF1 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B395671DB917D300F86EF1 /* add@2x.png */; };
+		25B3956B1DB9190D00F86EF1 /* NewTodoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B3956A1DB9190D00F86EF1 /* NewTodoView.m */; };
+		25B3956D1DB9193A00F86EF1 /* NewTodoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B3956C1DB9193A00F86EF1 /* NewTodoView.xib */; };
+		25B395731DB91AE000F86EF1 /* UIView+Mango.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395721DB91AE000F86EF1 /* UIView+Mango.m */; };
+		25B395781DB9202700F86EF1 /* AnimationBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395771DB9202700F86EF1 /* AnimationBuilder.m */; };
+		25B3957B1DB9204200F86EF1 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B3957A1DB9204200F86EF1 /* DataManager.m */; };
+		25B3957E1DB921EE00F86EF1 /* close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B3957C1DB921EE00F86EF1 /* close@2x.png */; };
+		25B3957F1DB921EE00F86EF1 /* confirm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B3957D1DB921EE00F86EF1 /* confirm@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25B395071DB8FE8200F86EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25B394E21DB8FE8100F86EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B394E91DB8FE8100F86EF1;
+			remoteInfo = Mango;
+		};
+		25B395121DB8FE8200F86EF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 25B394E21DB8FE8100F86EF1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25B394E91DB8FE8100F86EF1;
+			remoteInfo = Mango;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		25B394EA1DB8FE8200F86EF1 /* Mango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mango.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B394EE1DB8FE8200F86EF1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		25B394FA1DB8FE8200F86EF1 /* Mango.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mango.xcdatamodel; sourceTree = "<group>"; };
+		25B394FC1DB8FE8200F86EF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		25B394FF1DB8FE8200F86EF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		25B395011DB8FE8200F86EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B395061DB8FE8200F86EF1 /* MangoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B3950A1DB8FE8200F86EF1 /* MangoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangoTests.m; sourceTree = "<group>"; };
+		25B3950C1DB8FE8200F86EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B395111DB8FE8200F86EF1 /* MangoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MangoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		25B395151DB8FE8200F86EF1 /* MangoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MangoUITests.m; sourceTree = "<group>"; };
+		25B395171DB8FE8200F86EF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		25B395241DB8FF9400F86EF1 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		25B395251DB8FF9400F86EF1 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		25B395371DB900C700F86EF1 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		25B395381DB900C700F86EF1 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		25B3953A1DB900D700F86EF1 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		25B3953B1DB900D700F86EF1 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		25B395441DB905FE00F86EF1 /* tab_timer@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_timer@2x.png"; path = "../Todo/tab_timer@2x.png"; sourceTree = "<group>"; };
+		25B395451DB905FE00F86EF1 /* tab_todo@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tab_todo@2x.png"; path = "../Todo/tab_todo@2x.png"; sourceTree = "<group>"; };
+		25B3954B1DB9084200F86EF1 /* tab_note@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_note@2x.png"; sourceTree = "<group>"; };
+		25B3954C1DB9084200F86EF1 /* tab_set@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tab_set@2x.png"; sourceTree = "<group>"; };
+		25B3954F1DB90E8800F86EF1 /* launch.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = launch.jpg; sourceTree = "<group>"; };
+		25B395511DB90EE600F86EF1 /* TodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoViewController.h; sourceTree = "<group>"; };
+		25B395521DB90EE600F86EF1 /* TodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoViewController.m; sourceTree = "<group>"; };
+		25B395531DB90EE600F86EF1 /* TodoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodoViewController.xib; sourceTree = "<group>"; };
+		25B395561DB90EF500F86EF1 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
+		25B395571DB90EF500F86EF1 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
+		25B395581DB90EF500F86EF1 /* NoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteViewController.xib; sourceTree = "<group>"; };
+		25B3955B1DB90F0800F86EF1 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
+		25B3955C1DB90F0800F86EF1 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
+		25B3955D1DB90F0800F86EF1 /* TimerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
+		25B395601DB90F1400F86EF1 /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingViewController.h; sourceTree = "<group>"; };
+		25B395611DB90F1400F86EF1 /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingViewController.m; sourceTree = "<group>"; };
+		25B395621DB90F1400F86EF1 /* SettingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		25B395671DB917D300F86EF1 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
+		25B395691DB9190D00F86EF1 /* NewTodoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewTodoView.h; sourceTree = "<group>"; };
+		25B3956A1DB9190D00F86EF1 /* NewTodoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewTodoView.m; sourceTree = "<group>"; };
+		25B3956C1DB9193A00F86EF1 /* NewTodoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NewTodoView.xib; sourceTree = "<group>"; };
+		25B395711DB91AE000F86EF1 /* UIView+Mango.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Mango.h"; sourceTree = "<group>"; };
+		25B395721DB91AE000F86EF1 /* UIView+Mango.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Mango.m"; sourceTree = "<group>"; };
+		25B395751DB91DDC00F86EF1 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		25B395761DB9202700F86EF1 /* AnimationBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnimationBuilder.h; sourceTree = "<group>"; };
+		25B395771DB9202700F86EF1 /* AnimationBuilder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnimationBuilder.m; sourceTree = "<group>"; };
+		25B395791DB9204200F86EF1 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		25B3957A1DB9204200F86EF1 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		25B3957C1DB921EE00F86EF1 /* close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "close@2x.png"; sourceTree = "<group>"; };
+		25B3957D1DB921EE00F86EF1 /* confirm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "confirm@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25B394E71DB8FE8100F86EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B395031DB8FE8200F86EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B3950E1DB8FE8200F86EF1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B394E11DB8FE8100F86EF1 = {
+			isa = PBXGroup;
+			children = (
+				25B394EC1DB8FE8200F86EF1 /* Mango */,
+				25B395091DB8FE8200F86EF1 /* MangoTests */,
+				25B395141DB8FE8200F86EF1 /* MangoUITests */,
+				25B394EB1DB8FE8200F86EF1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		25B394EB1DB8FE8200F86EF1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				25B394EA1DB8FE8200F86EF1 /* Mango.app */,
+				25B395061DB8FE8200F86EF1 /* MangoTests.xctest */,
+				25B395111DB8FE8200F86EF1 /* MangoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		25B394EC1DB8FE8200F86EF1 /* Mango */ = {
+			isa = PBXGroup;
+			children = (
+				25B395231DB8FF9400F86EF1 /* Main */,
+				25B395321DB8FF9400F86EF1 /* Todo */,
+				25B395261DB8FF9400F86EF1 /* Note */,
+				25B3952E1DB8FF9400F86EF1 /* Timer */,
+				25B3952A1DB8FF9400F86EF1 /* Setting */,
+				25B3956E1DB91A9A00F86EF1 /* Common */,
+				25B3953D1DB902A500F86EF1 /* Resources */,
+				25B394FC1DB8FE8200F86EF1 /* Assets.xcassets */,
+				25B394FE1DB8FE8200F86EF1 /* LaunchScreen.storyboard */,
+				25B395011DB8FE8200F86EF1 /* Info.plist */,
+				25B394F91DB8FE8200F86EF1 /* Mango.xcdatamodeld */,
+				25B394ED1DB8FE8200F86EF1 /* Supporting Files */,
+			);
+			path = Mango;
+			sourceTree = "<group>";
+		};
+		25B394ED1DB8FE8200F86EF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				25B394EE1DB8FE8200F86EF1 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		25B395091DB8FE8200F86EF1 /* MangoTests */ = {
+			isa = PBXGroup;
+			children = (
+				25B3950A1DB8FE8200F86EF1 /* MangoTests.m */,
+				25B3950C1DB8FE8200F86EF1 /* Info.plist */,
+			);
+			path = MangoTests;
+			sourceTree = "<group>";
+		};
+		25B395141DB8FE8200F86EF1 /* MangoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				25B395151DB8FE8200F86EF1 /* MangoUITests.m */,
+				25B395171DB8FE8200F86EF1 /* Info.plist */,
+			);
+			path = MangoUITests;
+			sourceTree = "<group>";
+		};
+		25B395231DB8FF9400F86EF1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				25B395241DB8FF9400F86EF1 /* AppDelegate.h */,
+				25B395251DB8FF9400F86EF1 /* AppDelegate.m */,
+				25B395371DB900C700F86EF1 /* BaseNavigationController.h */,
+				25B395381DB900C700F86EF1 /* BaseNavigationController.m */,
+				25B3953A1DB900D700F86EF1 /* BaseViewController.h */,
+				25B3953B1DB900D700F86EF1 /* BaseViewController.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		25B395261DB8FF9400F86EF1 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+				25B395271DB8FF9400F86EF1 /* Controller */,
+				25B395281DB8FF9400F86EF1 /* Model */,
+				25B395291DB8FF9400F86EF1 /* View */,
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		25B395271DB8FF9400F86EF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25B395561DB90EF500F86EF1 /* NoteViewController.h */,
+				25B395571DB90EF500F86EF1 /* NoteViewController.m */,
+				25B395581DB90EF500F86EF1 /* NoteViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		25B395281DB8FF9400F86EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25B395291DB8FF9400F86EF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		25B3952A1DB8FF9400F86EF1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				25B3952B1DB8FF9400F86EF1 /* Controller */,
+				25B3952C1DB8FF9400F86EF1 /* Model */,
+				25B3952D1DB8FF9400F86EF1 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		25B3952B1DB8FF9400F86EF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25B395601DB90F1400F86EF1 /* SettingViewController.h */,
+				25B395611DB90F1400F86EF1 /* SettingViewController.m */,
+				25B395621DB90F1400F86EF1 /* SettingViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		25B3952C1DB8FF9400F86EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25B3952D1DB8FF9400F86EF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		25B3952E1DB8FF9400F86EF1 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				25B3952F1DB8FF9400F86EF1 /* Controller */,
+				25B395301DB8FF9400F86EF1 /* Model */,
+				25B395311DB8FF9400F86EF1 /* View */,
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		25B3952F1DB8FF9400F86EF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25B3955B1DB90F0800F86EF1 /* TimerViewController.h */,
+				25B3955C1DB90F0800F86EF1 /* TimerViewController.m */,
+				25B3955D1DB90F0800F86EF1 /* TimerViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		25B395301DB8FF9400F86EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25B395311DB8FF9400F86EF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		25B395321DB8FF9400F86EF1 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				25B395331DB8FF9400F86EF1 /* Controller */,
+				25B395341DB8FF9400F86EF1 /* Model */,
+				25B395351DB8FF9400F86EF1 /* View */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		25B395331DB8FF9400F86EF1 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				25B395511DB90EE600F86EF1 /* TodoViewController.h */,
+				25B395521DB90EE600F86EF1 /* TodoViewController.m */,
+				25B395531DB90EE600F86EF1 /* TodoViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		25B395341DB8FF9400F86EF1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		25B395351DB8FF9400F86EF1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				25B395691DB9190D00F86EF1 /* NewTodoView.h */,
+				25B3956A1DB9190D00F86EF1 /* NewTodoView.m */,
+				25B3956C1DB9193A00F86EF1 /* NewTodoView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		25B3953D1DB902A500F86EF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25B3954A1DB9061100F86EF1 /* Common */,
+				25B3953E1DB902A500F86EF1 /* Note */,
+				25B3953F1DB902A500F86EF1 /* Setting */,
+				25B395401DB902A500F86EF1 /* Timer */,
+				25B395411DB902A500F86EF1 /* Todo */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		25B3953E1DB902A500F86EF1 /* Note */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Note;
+			sourceTree = "<group>";
+		};
+		25B3953F1DB902A500F86EF1 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		25B395401DB902A500F86EF1 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Timer;
+			sourceTree = "<group>";
+		};
+		25B395411DB902A500F86EF1 /* Todo */ = {
+			isa = PBXGroup;
+			children = (
+				25B3957C1DB921EE00F86EF1 /* close@2x.png */,
+				25B3957D1DB921EE00F86EF1 /* confirm@2x.png */,
+				25B395671DB917D300F86EF1 /* add@2x.png */,
+			);
+			path = Todo;
+			sourceTree = "<group>";
+		};
+		25B3954A1DB9061100F86EF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				25B3954F1DB90E8800F86EF1 /* launch.jpg */,
+				25B3954B1DB9084200F86EF1 /* tab_note@2x.png */,
+				25B3954C1DB9084200F86EF1 /* tab_set@2x.png */,
+				25B395441DB905FE00F86EF1 /* tab_timer@2x.png */,
+				25B395451DB905FE00F86EF1 /* tab_todo@2x.png */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		25B3956E1DB91A9A00F86EF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				25B395701DB91AB100F86EF1 /* Category */,
+				25B3956F1DB91A9A00F86EF1 /* Tools */,
+				25B395751DB91DDC00F86EF1 /* PrefixHeader.pch */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		25B3956F1DB91A9A00F86EF1 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				25B395761DB9202700F86EF1 /* AnimationBuilder.h */,
+				25B395771DB9202700F86EF1 /* AnimationBuilder.m */,
+				25B395791DB9204200F86EF1 /* DataManager.h */,
+				25B3957A1DB9204200F86EF1 /* DataManager.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		25B395701DB91AB100F86EF1 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				25B395711DB91AE000F86EF1 /* UIView+Mango.h */,
+				25B395721DB91AE000F86EF1 /* UIView+Mango.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25B394E91DB8FE8100F86EF1 /* Mango */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B3951A1DB8FE8200F86EF1 /* Build configuration list for PBXNativeTarget "Mango" */;
+			buildPhases = (
+				25B394E61DB8FE8100F86EF1 /* Sources */,
+				25B394E71DB8FE8100F86EF1 /* Frameworks */,
+				25B394E81DB8FE8100F86EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mango;
+			productName = Mango;
+			productReference = 25B394EA1DB8FE8200F86EF1 /* Mango.app */;
+			productType = "com.apple.product-type.application";
+		};
+		25B395051DB8FE8200F86EF1 /* MangoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B3951D1DB8FE8200F86EF1 /* Build configuration list for PBXNativeTarget "MangoTests" */;
+			buildPhases = (
+				25B395021DB8FE8200F86EF1 /* Sources */,
+				25B395031DB8FE8200F86EF1 /* Frameworks */,
+				25B395041DB8FE8200F86EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25B395081DB8FE8200F86EF1 /* PBXTargetDependency */,
+			);
+			name = MangoTests;
+			productName = MangoTests;
+			productReference = 25B395061DB8FE8200F86EF1 /* MangoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		25B395101DB8FE8200F86EF1 /* MangoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25B395201DB8FE8200F86EF1 /* Build configuration list for PBXNativeTarget "MangoUITests" */;
+			buildPhases = (
+				25B3950D1DB8FE8200F86EF1 /* Sources */,
+				25B3950E1DB8FE8200F86EF1 /* Frameworks */,
+				25B3950F1DB8FE8200F86EF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25B395131DB8FE8200F86EF1 /* PBXTargetDependency */,
+			);
+			name = MangoUITests;
+			productName = MangoUITests;
+			productReference = 25B395111DB8FE8200F86EF1 /* MangoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		25B394E21DB8FE8100F86EF1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = shuige;
+				TargetAttributes = {
+					25B394E91DB8FE8100F86EF1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 38842EP984;
+						ProvisioningStyle = Automatic;
+					};
+					25B395051DB8FE8200F86EF1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 38842EP984;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 25B394E91DB8FE8100F86EF1;
+					};
+					25B395101DB8FE8200F86EF1 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 38842EP984;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 25B394E91DB8FE8100F86EF1;
+					};
+				};
+			};
+			buildConfigurationList = 25B394E51DB8FE8100F86EF1 /* Build configuration list for PBXProject "Mango" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 25B394E11DB8FE8100F86EF1;
+			productRefGroup = 25B394EB1DB8FE8200F86EF1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				25B394E91DB8FE8100F86EF1 /* Mango */,
+				25B395051DB8FE8200F86EF1 /* MangoTests */,
+				25B395101DB8FE8200F86EF1 /* MangoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25B394E81DB8FE8100F86EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B3956D1DB9193A00F86EF1 /* NewTodoView.xib in Resources */,
+				25B3957E1DB921EE00F86EF1 /* close@2x.png in Resources */,
+				25B395501DB90E8800F86EF1 /* launch.jpg in Resources */,
+				25B395001DB8FE8200F86EF1 /* LaunchScreen.storyboard in Resources */,
+				25B3954D1DB9084200F86EF1 /* tab_note@2x.png in Resources */,
+				25B394FD1DB8FE8200F86EF1 /* Assets.xcassets in Resources */,
+				25B395551DB90EE600F86EF1 /* TodoViewController.xib in Resources */,
+				25B395481DB905FE00F86EF1 /* tab_timer@2x.png in Resources */,
+				25B3954E1DB9084200F86EF1 /* tab_set@2x.png in Resources */,
+				25B395641DB90F1400F86EF1 /* SettingViewController.xib in Resources */,
+				25B3955A1DB90EF500F86EF1 /* NoteViewController.xib in Resources */,
+				25B3955F1DB90F0800F86EF1 /* TimerViewController.xib in Resources */,
+				25B395491DB905FE00F86EF1 /* tab_todo@2x.png in Resources */,
+				25B395681DB917D300F86EF1 /* add@2x.png in Resources */,
+				25B3957F1DB921EE00F86EF1 /* confirm@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B395041DB8FE8200F86EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B3950F1DB8FE8200F86EF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25B394E61DB8FE8100F86EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B395781DB9202700F86EF1 /* AnimationBuilder.m in Sources */,
+				25B3955E1DB90F0800F86EF1 /* TimerViewController.m in Sources */,
+				25B395591DB90EF500F86EF1 /* NoteViewController.m in Sources */,
+				25B395541DB90EE600F86EF1 /* TodoViewController.m in Sources */,
+				25B395391DB900C700F86EF1 /* BaseNavigationController.m in Sources */,
+				25B3953C1DB900D700F86EF1 /* BaseViewController.m in Sources */,
+				25B3957B1DB9204200F86EF1 /* DataManager.m in Sources */,
+				25B395631DB90F1400F86EF1 /* SettingViewController.m in Sources */,
+				25B394FB1DB8FE8200F86EF1 /* Mango.xcdatamodeld in Sources */,
+				25B395731DB91AE000F86EF1 /* UIView+Mango.m in Sources */,
+				25B394EF1DB8FE8200F86EF1 /* main.m in Sources */,
+				25B3956B1DB9190D00F86EF1 /* NewTodoView.m in Sources */,
+				25B395361DB8FF9400F86EF1 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B395021DB8FE8200F86EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B3950B1DB8FE8200F86EF1 /* MangoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25B3950D1DB8FE8200F86EF1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B395161DB8FE8200F86EF1 /* MangoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25B395081DB8FE8200F86EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25B394E91DB8FE8100F86EF1 /* Mango */;
+			targetProxy = 25B395071DB8FE8200F86EF1 /* PBXContainerItemProxy */;
+		};
+		25B395131DB8FE8200F86EF1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25B394E91DB8FE8100F86EF1 /* Mango */;
+			targetProxy = 25B395121DB8FE8200F86EF1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		25B394FE1DB8FE8200F86EF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				25B394FF1DB8FE8200F86EF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		25B395181DB8FE8200F86EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		25B395191DB8FE8200F86EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		25B3951B1DB8FE8200F86EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38842EP984;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zhouyong/Documents/2016/LIAS/Mango/Mango/Common/PrefixHeader.pch;
+				INFOPLIST_FILE = Mango/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mangoshuige.Mango;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		25B3951C1DB8FE8200F86EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 38842EP984;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/zhouyong/Documents/2016/LIAS/Mango/Mango/Common/PrefixHeader.pch;
+				INFOPLIST_FILE = Mango/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mangoshuige.Mango;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		25B3951E1DB8FE8200F86EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 38842EP984;
+				INFOPLIST_FILE = MangoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mangoshuige.MangoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mango.app/Mango";
+			};
+			name = Debug;
+		};
+		25B3951F1DB8FE8200F86EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 38842EP984;
+				INFOPLIST_FILE = MangoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mangoshuige.MangoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Mango.app/Mango";
+			};
+			name = Release;
+		};
+		25B395211DB8FE8200F86EF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 38842EP984;
+				INFOPLIST_FILE = MangoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mangoshuige.MangoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Mango;
+			};
+			name = Debug;
+		};
+		25B395221DB8FE8200F86EF1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 38842EP984;
+				INFOPLIST_FILE = MangoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mangoshuige.MangoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Mango;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25B394E51DB8FE8100F86EF1 /* Build configuration list for PBXProject "Mango" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B395181DB8FE8200F86EF1 /* Debug */,
+				25B395191DB8FE8200F86EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25B3951A1DB8FE8200F86EF1 /* Build configuration list for PBXNativeTarget "Mango" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B3951B1DB8FE8200F86EF1 /* Debug */,
+				25B3951C1DB8FE8200F86EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		25B3951D1DB8FE8200F86EF1 /* Build configuration list for PBXNativeTarget "MangoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B3951E1DB8FE8200F86EF1 /* Debug */,
+				25B3951F1DB8FE8200F86EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		25B395201DB8FE8200F86EF1 /* Build configuration list for PBXNativeTarget "MangoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25B395211DB8FE8200F86EF1 /* Debug */,
+				25B395221DB8FE8200F86EF1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		25B394F91DB8FE8200F86EF1 /* Mango.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				25B394FA1DB8FE8200F86EF1 /* Mango.xcdatamodel */,
+			);
+			currentVersion = 25B394FA1DB8FE8200F86EF1 /* Mango.xcdatamodel */;
+			path = Mango.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 25B394E21DB8FE8100F86EF1 /* Project object */;
+}
