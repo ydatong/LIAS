@@ -10,4 +10,14 @@
 
 @interface AnimationBuilder : NSObject
 
++ (instancetype)defaultAnimator;
+
+- (void)addFallDownAnimation:(void (^)())animations
+                  completion:(void(^)())completion;
+
+
+/*
+ shake动画
+ */
+- (void)addShakeAnimationToView:(UIView*)view fromVertical:(BOOL)vertical;
 @end

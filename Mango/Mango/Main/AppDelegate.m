@@ -31,33 +31,76 @@
 
 - (UITabBarController*)setupMainController {
     
-    BaseNavigationController *todoNav = [self navgationControllerWithTitle:@"每日待办"
-                                                                     image:@"tab_todo"
-                                                        rootViewController:@"TodoViewController"];
-    BaseNavigationController *noteNav = [self navgationControllerWithTitle:@"记事"
-                                                                     image:@"tab_note"
-                                                        rootViewController:@"NoteViewController"];
-    BaseNavigationController *timerNav = [self navgationControllerWithTitle:@"定时"
-                                                                      image:@"tab_timer"
-                                                         rootViewController:@"TimerViewController"];
-    BaseNavigationController *settingNav = [self navgationControllerWithTitle:@"设置"
-                                                                        image:@"tab_set"
-                                                           rootViewController:@"SettingViewController"];
-    
     UITabBarController *mainTabbarVC = [[UITabBarController alloc] init];
-    mainTabbarVC.viewControllers = @[todoNav,noteNav,timerNav,settingNav];
+    
+    
+    NSDictionary *tabbarOrderInfo = @{@"0":kTabbarOrderNameTodo,
+                                      @"1":kTabbarOrderNamePlan,
+                                      @"2":kTabbarOrderNameNote,
+                                      @"3":kTabbarOrderNameTimer,
+                                      @"4":kTabbarOrderNameSetting};
+    
+//    if (!tabbarOrderInfo) {
+//        tabbarOrderInfo = @{@"0":@"todo",
+//                            @"1":@"plan",
+//                            @"2":@"note",
+//                            @"3":@"timer",
+//                            @"4":@"setting"};
+//        [[NSUserDefaults standardUserDefaults] setValue:tabbarOrderInfo forKey:kTabbarOrderInfoKey];
+//    }
+
+    NSMutableArray *tmp = [NSMutableArray arrayWithCapacity:0];
+    
+    for (int i = 0 ; i < 5; i++) {
+        [tmp addObject:[self navigationOfName:tabbarOrderInfo[[NSString stringWithFormat:@"%d",i]]]];
+    }
+    
+    mainTabbarVC.viewControllers = [NSArray arrayWithArray:tmp];
     return mainTabbarVC;
+}
+
+- (BaseNavigationController*)navigationOfName:(NSString*)name {
+    
+    if ([name isEqualToString:kTabbarOrderNameTodo]) {
+       return [self navgationControllerWithTitle:@"待办"
+                                     image:@"tabbar_todo"
+                        rootViewController:@"TodoViewController"];
+    }
+    
+    if ([name isEqualToString:kTabbarOrderNamePlan]) {
+        return [self navgationControllerWithTitle:@"计划"
+                                     image:@"tabbar_plan"
+                        rootViewController:@"PlanViewController"];
+    }
+    
+    if ([name isEqualToString:kTabbarOrderNameTimer]) {
+        return [self navgationControllerWithTitle:@"定时"
+                                            image:@"tabbar_timer"
+                               rootViewController:@"TimerViewController"];
+    }
+    
+    if ([name isEqualToString:kTabbarOrderNameNote]) {
+        return [self navgationControllerWithTitle:@"记事"
+                                            image:@"tabbar_note"
+                               rootViewController:@"NoteViewController"];
+    }
+    
+    return [self navgationControllerWithTitle:@"设置"
+                                 image:@"tabbar_setting"
+                    rootViewController:@"SettingViewController"];
+    
 }
 
 - (BaseNavigationController*)navgationControllerWithTitle:(NSString*)title
                                                   image:(NSString*)image
                                      rootViewController:(NSString*)controller{
     
-    UIViewController *vctest = [NSClassFromString(controller) alloc];
-    vctest = [vctest initWithNibName:controller bundle:nil];
-    vctest.tabBarItem.title = title;
-    vctest.tabBarItem.image = [UIImage imageNamed:image];
-    BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vctest];
+    UIViewController *vc = [NSClassFromString(controller) alloc];
+    vc = [vc initWithNibName:controller bundle:nil];
+    vc.tabBarItem.title = title;
+    vc.tabBarItem.image = [UIImage imageNamed:image];
+    vc.navigationItem.title = title;
+    BaseNavigationController *nav = [[BaseNavigationController alloc] initWithRootViewController:vc];
     return nav;
 }
 

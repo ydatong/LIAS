@@ -9,6 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TodoViewController">
             <connections>
+                <outlet property="calendar" destination="OP4-qZ-C3k" id="Pwh-ia-OwF"/>
+                <outlet property="todoTableView" destination="KRt-xZ-0iM" id="oVm-yV-Xsn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,6 +27,10 @@
                 </view>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="KRt-xZ-0iM">
                     <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="uas-7r-hHe"/>
+                        <outlet property="delegate" destination="-1" id="tGV-Ch-cCD"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -37,7 +43,7 @@
                 <constraint firstItem="KRt-xZ-0iM" firstAttribute="top" secondItem="OP4-qZ-C3k" secondAttribute="bottom" id="kJb-ik-3NP"/>
                 <constraint firstItem="OP4-qZ-C3k" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sJt-12-Tpg"/>
             </constraints>
-            <point key="canvasLocation" x="550.5" y="133.5"/>
+            <point key="canvasLocation" x="137" y="77"/>
         </view>
     </objects>
 </document>

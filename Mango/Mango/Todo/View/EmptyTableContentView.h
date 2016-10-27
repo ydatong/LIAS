@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface EmptyTableContentView : UIView
+@property (strong, nonatomic) IBOutlet UIImageView *imageView;
+@property (strong, nonatomic) IBOutlet UILabel *descriptionLabel;
 
 @end

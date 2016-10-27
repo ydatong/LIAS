@@ -8,6 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MonthPickerVIew : UIView
+@protocol MonthPickerDelegate <NSObject>
+
+@optional
+- (void)monthPickerDidSelectDate:(NSDate*)date;
+
+@end
+
+@interface MonthPickerVIew : UIView <UIPickerViewDelegate,UIPickerViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UIPickerView *datePicker;
+@property (nonatomic, weak) id<MonthPickerDelegate> delegate;
+@property (strong, nonatomic) NSArray *years;
+@property (strong, nonatomic) NSArray *months;
 
 @end

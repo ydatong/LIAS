@@ -12,5 +12,5 @@
 
 - (void)setupUI;
 - (void)loadData;
-
+- (void)addNewItem;
 @end

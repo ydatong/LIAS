@@ -17,6 +17,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.edgesForExtendedLayout = UIRectEdgeNone;
+    self.tabBarController.tabBar.translucent = NO;
+    self.navigationController.navigationBar.translucent = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"add"]
+                                                                              style:UIBarButtonItemStylePlain
+                                                                             target:self
+                                                                             action:@selector(addNewItem)];
+    
     [self setupUI];
     [self loadData];
 }
@@ -28,7 +38,7 @@
 
 
 - (void)setupUI {
-    
+
 }
 
 
@@ -36,5 +46,10 @@
     
 }
 
+
+/*添加新事件*/
+- (void)addNewItem {
+    
+}
 
 @end

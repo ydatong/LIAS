@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CountdownViewController">
             <connections>
+                <outlet property="backView" destination="ATi-qr-Pz3" id="GLV-Y2-7Ya"/>
+                <outlet property="contentScroll" destination="j99-u2-dNM" id="dSl-SM-DyV"/>
+                <outlet property="endDatePicker" destination="TjR-uQ-Biu" id="cXP-vL-yEo"/>
+                <outlet property="endHeight" destination="eh6-Mm-U9d" id="cIb-78-Vca"/>
+                <outlet property="noteHeight" destination="Gcl-xL-LzU" id="czs-G1-xhY"/>
+                <outlet property="noteTextView" destination="y5W-g6-nmz" id="Enu-de-VFh"/>
+                <outlet property="noticeSwitch" destination="YB7-or-rQB" id="d1l-5n-xbW"/>
+                <outlet property="startDatePicker" destination="oNQ-js-9cX" id="Dc5-oy-JbW"/>
+                <outlet property="startHight" destination="1PU-BW-enh" id="nKW-8b-hap"/>
+                <outlet property="titleTxtField" destination="cgp-qv-tvl" id="CVJ-4c-zxn"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -14,7 +25,157 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tx4-3i-NFR">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="NDz-hD-lzH"/>
+                    </constraints>
+                    <color key="barTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <items>
+                        <navigationItem title="倒数日" id="qBW-cn-djQ">
+                            <barButtonItem key="leftBarButtonItem" image="close.png" id="2wb-Bd-ub9">
+                                <connections>
+                                    <action selector="close:" destination="-1" id="unf-AO-Bp3"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" image="confirm.png" id="7bT-hn-JJS">
+                                <connections>
+                                    <action selector="confirm:" destination="-1" id="FZS-DO-0rY"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="j99-u2-dNM">
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ATi-qr-Pz3">
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开始日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sA7-54-Wma">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="tXh-oQ-4S4"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="结束日期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0s2-R7-6WF">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="uvD-HN-Tu6"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="备注" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mD0-sd-riJ">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="t4K-bb-oEN"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入倒数日标题" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cgp-qv-tvl">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="40" id="naQ-vQ-vVG"/>
+                                    </constraints>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="oNQ-js-9cX">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="1PU-BW-enh"/>
+                                    </constraints>
+                                    <date key="date" timeIntervalSinceReferenceDate="499185584.29872102">
+                                        <!--2016-10-26 14:39:44 +0000-->
+                                    </date>
+                                    <locale key="locale" localeIdentifier="zh_CN"/>
+                                </datePicker>
+                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="TjR-uQ-Biu">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="80" id="eh6-Mm-U9d"/>
+                                    </constraints>
+                                    <date key="date" timeIntervalSinceReferenceDate="499185639.56636298">
+                                        <!--2016-10-26 14:40:39 +0000-->
+                                    </date>
+                                    <locale key="locale" localeIdentifier="zh_CN"/>
+                                </datePicker>
+                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="y5W-g6-nmz">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="Gcl-xL-LzU"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                </textView>
+                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YB7-or-rQB">
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="hU1-kT-Sdn"/>
+                                    </constraints>
+                                </switch>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="到时提醒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cnd-vt-N2x">
+                                    <gestureRecognizers/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="20" id="WZb-tK-b9z"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <gestureRecognizers/>
+                            <constraints>
+                                <constraint firstItem="sA7-54-Wma" firstAttribute="leading" secondItem="ATi-qr-Pz3" secondAttribute="leading" constant="10" id="1Zy-pH-Xm1"/>
+                                <constraint firstAttribute="trailing" secondItem="y5W-g6-nmz" secondAttribute="trailing" constant="10" id="4UG-gK-HP8"/>
+                                <constraint firstItem="oNQ-js-9cX" firstAttribute="top" secondItem="sA7-54-Wma" secondAttribute="bottom" constant="10" id="7Fc-R3-G9N"/>
+                                <constraint firstItem="0s2-R7-6WF" firstAttribute="leading" secondItem="ATi-qr-Pz3" secondAttribute="leading" constant="10" id="A1g-Vd-S7Q"/>
+                                <constraint firstItem="mD0-sd-riJ" firstAttribute="leading" secondItem="ATi-qr-Pz3" secondAttribute="leading" constant="10" id="CaX-Cu-2bu"/>
+                                <constraint firstItem="oNQ-js-9cX" firstAttribute="leading" secondItem="ATi-qr-Pz3" secondAttribute="leading" constant="10" id="DAl-MO-4hS"/>
+                                <constraint firstItem="cgp-qv-tvl" firstAttribute="leading" secondItem="ATi-qr-Pz3" secondAttribute="leading" constant="10" id="EMS-td-7Bc"/>
+                                <constraint firstItem="cnd-vt-N2x" firstAttribute="top" secondItem="y5W-g6-nmz" secondAttribute="bottom" constant="20" id="EVl-id-Y9j"/>
+                                <constraint firstAttribute="trailing" secondItem="oNQ-js-9cX" secondAttribute="trailing" constant="10" id="FWU-xC-GXZ"/>
+                                <constraint firstItem="y5W-g6-nmz" firstAttribute="leading" secondItem="ATi-qr-Pz3" secondAttribute="leading" constant="10" id="bJq-W9-WIp"/>
+                                <constraint firstItem="cgp-qv-tvl" firstAttribute="top" secondItem="ATi-qr-Pz3" secondAttribute="top" id="bMH-ev-9Yp"/>
+                                <constraint firstItem="sA7-54-Wma" firstAttribute="top" secondItem="cgp-qv-tvl" secondAttribute="bottom" constant="10" id="cvq-kG-Yum"/>
+                                <constraint firstItem="cnd-vt-N2x" firstAttribute="leading" secondItem="ATi-qr-Pz3" secondAttribute="leading" constant="10" id="dCj-Ma-cae"/>
+                                <constraint firstItem="0s2-R7-6WF" firstAttribute="top" secondItem="oNQ-js-9cX" secondAttribute="bottom" constant="20" id="eD5-EK-s4M"/>
+                                <constraint firstAttribute="trailing" secondItem="cgp-qv-tvl" secondAttribute="trailing" constant="10" id="jCC-zB-OGJ"/>
+                                <constraint firstAttribute="trailing" secondItem="TjR-uQ-Biu" secondAttribute="trailing" constant="10" id="jfs-JB-Q2V"/>
+                                <constraint firstItem="y5W-g6-nmz" firstAttribute="top" secondItem="mD0-sd-riJ" secondAttribute="bottom" constant="10" id="kwG-2Q-B67"/>
+                                <constraint firstItem="TjR-uQ-Biu" firstAttribute="top" secondItem="0s2-R7-6WF" secondAttribute="bottom" constant="10" id="ocz-Kg-X79"/>
+                                <constraint firstItem="YB7-or-rQB" firstAttribute="top" secondItem="y5W-g6-nmz" secondAttribute="bottom" constant="20" id="on8-IU-tEX"/>
+                                <constraint firstAttribute="trailing" secondItem="YB7-or-rQB" secondAttribute="trailing" constant="10" id="tLH-B1-6pd"/>
+                                <constraint firstItem="TjR-uQ-Biu" firstAttribute="leading" secondItem="ATi-qr-Pz3" secondAttribute="leading" constant="10" id="yAB-wI-23P"/>
+                                <constraint firstItem="mD0-sd-riJ" firstAttribute="top" secondItem="TjR-uQ-Biu" secondAttribute="bottom" constant="20" id="yhY-Ic-rmF"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="ATi-qr-Pz3" firstAttribute="leading" secondItem="j99-u2-dNM" secondAttribute="leading" id="2zN-1U-1hk"/>
+                        <constraint firstItem="ATi-qr-Pz3" firstAttribute="top" secondItem="j99-u2-dNM" secondAttribute="top" id="6VA-AW-g7z"/>
+                        <constraint firstAttribute="trailing" secondItem="ATi-qr-Pz3" secondAttribute="trailing" id="QhB-go-rQf"/>
+                        <constraint firstItem="ATi-qr-Pz3" firstAttribute="centerY" secondItem="j99-u2-dNM" secondAttribute="centerY" id="RU2-wN-QKk"/>
+                        <constraint firstAttribute="bottom" secondItem="ATi-qr-Pz3" secondAttribute="bottom" id="UY6-CI-tBV"/>
+                        <constraint firstItem="ATi-qr-Pz3" firstAttribute="centerX" secondItem="j99-u2-dNM" secondAttribute="centerX" id="UrE-XY-oYi"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="j99-u2-dNM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="0QL-nL-6sF"/>
+                <constraint firstItem="Tx4-3i-NFR" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="BHp-HF-loj"/>
+                <constraint firstAttribute="trailing" secondItem="Tx4-3i-NFR" secondAttribute="trailing" id="ICu-fv-quf"/>
+                <constraint firstItem="Tx4-3i-NFR" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SRg-wU-Fwy"/>
+                <constraint firstAttribute="trailing" secondItem="j99-u2-dNM" secondAttribute="trailing" constant="10" id="XmM-lp-u2w"/>
+                <constraint firstItem="j99-u2-dNM" firstAttribute="top" secondItem="Tx4-3i-NFR" secondAttribute="bottom" constant="10" id="hFX-qz-lYf"/>
+                <constraint firstAttribute="bottom" secondItem="j99-u2-dNM" secondAttribute="bottom" constant="10" id="hJB-Y4-ptf"/>
+            </constraints>
+            <point key="canvasLocation" x="22.5" y="44.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="close.png" width="16" height="16"/>
+        <image name="confirm.png" width="16" height="16"/>
+    </resources>
 </document>

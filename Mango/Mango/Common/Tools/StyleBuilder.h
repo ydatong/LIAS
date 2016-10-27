@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface StyleBuilder : NSObject
+
++ (instancetype)builder;
+
+- (UIColor*)getColor:(NSString *)hexColor;
+- (UIFont*)defaultFontWithSize:(CGFloat)fontSize;
+
+- (UIColor*)mainColor;
 
 @end

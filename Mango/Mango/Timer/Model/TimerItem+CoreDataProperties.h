@@ -21,6 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, copy) NSString *note;
 @property (nonatomic) BOOL notice;
 @property (nullable, nonatomic, copy) NSDate *createDate;
+@property (nonatomic) BOOL timer;
 
 @end
 

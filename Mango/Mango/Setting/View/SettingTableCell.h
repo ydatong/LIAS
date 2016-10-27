@@ -10,4 +10,8 @@
 
 @interface SettingTableCell : UITableViewCell
 
+@property (strong, nonatomic) IBOutlet UIImageView *leftImageView;
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
+@property (strong, nonatomic) IBOutlet UILabel *rightLabel;
+
 @end

@@ -18,4 +18,10 @@
 }
 */
 
+- (void)awakeFromNib {
+    [super awakeFromNib];
+    _descriptionLabel.textColor = MainColor;
+    _descriptionLabel.adjustsFontSizeToFitWidth = YES;
+    self.backgroundColor = [UIColor groupTableViewBackgroundColor];
+}
 @end

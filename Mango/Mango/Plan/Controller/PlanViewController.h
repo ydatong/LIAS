@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PlanViewController : UIViewController
+@interface PlanViewController : BaseViewController
 
 @end

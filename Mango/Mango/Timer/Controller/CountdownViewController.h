@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CountdownViewController : UIViewController
+@protocol CountdownProtocol <NSObject>
+
+- (void)countdownViewControllerDidConfirm:(TimerItem*)timerItem;
+
+@end
+
+@interface CountdownViewController : BaseViewController
+
+@property (nonatomic, weak) id<CountdownProtocol> delegate;
 
 @end

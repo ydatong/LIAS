@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SGOptions : UIView
+@protocol SGOptionDelegate <NSObject>
+
+- (NSArray*)sgOptionTitleOfOptions;
+@optional
+- (void)sgOptionDidSelectAtIndex:(NSInteger)index;
+
+@end
+
+@interface SGOption: UIView
+
+@property (nonatomic, weak) id<SGOptionDelegate> delegate;
+
+- (instancetype)initWithDelegate:(id)delegate;
+- (void)show;
 
 @end

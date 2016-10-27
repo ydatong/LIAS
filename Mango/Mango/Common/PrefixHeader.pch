@@ -9,6 +9,18 @@
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
 
+//import
+#import "UIView+Mango.h"
+#import "TodoItem.h"
+#import "StyleBuilder.h"
+#import "NSDate+Calendar.h"
+#import "AnimationBuilder.h"
+#import "DataManager.h"
+#import <objc/runtime.h>
+#import "EmptyTableContentView.h"
+#import "BaseViewController.h"
+#import "SGOptions.h"
+#import "TimerItem+CoreDataClass.h"
 
 //define
 #define AppWindow [UIApplication sharedApplication].keyWindow
@@ -16,7 +28,8 @@
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define ScreenBounds [UIScreen mainScreen].bounds
 
-//import
-#import "UIView+Mango.h"
+#define MainColor [[StyleBuilder builder] mainColor]
+#define DefaultFontWithSize(size) [[StyleBuilder builder] defaultFontWithSize:size]
 
+#define kTabbarOrderInfoKey @"tabbarOrderInfo"
 #endif /* PrefixHeader_pch */

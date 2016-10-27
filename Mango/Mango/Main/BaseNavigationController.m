@@ -27,7 +27,17 @@
 
 
 - (void)setupUI {
-    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:[UIColor blueColor]};
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName:MainColor};
+//    [self.navigationBar setBackgroundImage:[[UIImage alloc] init] forBarMetrics:UIBarMetricsDefault];
+//    [self.navigationBar setShadowImage:[[UIImage alloc] init]];
+}
+
+- (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if (self.viewControllers.count > 0) {
+        viewController.hidesBottomBarWhenPushed = YES;
+    }
+    [super pushViewController:viewController animated:YES];
 }
 
 

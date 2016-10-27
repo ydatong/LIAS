@@ -20,5 +20,6 @@
 @dynamic note;
 @dynamic notice;
 @dynamic createDate;
+@dynamic timer;
 
 @end

@@ -10,4 +10,18 @@
 
 @implementation UIFont (Ext)
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wobjc-protocol-method-implementation"
+
++ (UIFont *)boldSystemFontOfSize:(CGFloat)fontSize {
+    return [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+}
+
++ (UIFont *)systemFontOfSize:(CGFloat)fontSize {
+    return [UIFont fontWithName:@"HelveticaNeue" size:fontSize];
+}
+
+#pragma clang diagnostic pop
+
+
 @end

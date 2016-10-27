@@ -1,16 +1,59 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
-            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MonthPickerVIew">
+            <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M95-dm-l4N">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="2bQ-5V-UNY"/>
+                        <constraint firstAttribute="width" constant="20" id="cjr-20-Eka"/>
+                    </constraints>
+                    <state key="normal" image="close.png"/>
+                    <connections>
+                        <action selector="close:" destination="iN0-l3-epB" eventType="touchUpInside" id="dWB-u6-3DC"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grM-Ie-GhF">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="Buo-3P-bOb"/>
+                        <constraint firstAttribute="width" constant="20" id="wu5-oL-Q3G"/>
+                    </constraints>
+                    <state key="normal" image="confirm.png"/>
+                    <connections>
+                        <action selector="confirm:" destination="iN0-l3-epB" eventType="touchUpInside" id="2gN-Y5-ZZs"/>
+                    </connections>
+                </button>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rWd-yc-9WV"/>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="grM-Ie-GhF" secondAttribute="trailing" constant="20" id="86B-8d-iTz"/>
+                <constraint firstAttribute="trailing" secondItem="rWd-yc-9WV" secondAttribute="trailing" constant="50" id="Fmg-rT-let"/>
+                <constraint firstAttribute="bottom" secondItem="rWd-yc-9WV" secondAttribute="bottom" constant="50" id="M8e-33-ceB"/>
+                <constraint firstItem="M95-dm-l4N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="MzB-sl-A8v"/>
+                <constraint firstItem="grM-Ie-GhF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="Zwe-Ge-ftV"/>
+                <constraint firstItem="rWd-yc-9WV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="50" id="fAA-UC-Ic4"/>
+                <constraint firstItem="rWd-yc-9WV" firstAttribute="top" secondItem="grM-Ie-GhF" secondAttribute="bottom" constant="50" id="g3D-Hh-ZVk"/>
+                <constraint firstItem="M95-dm-l4N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="j8G-Lf-VX9"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="datePicker" destination="rWd-yc-9WV" id="3S7-hU-DhO"/>
+            </connections>
+            <point key="canvasLocation" x="-287" y="10"/>
         </view>
     </objects>
+    <resources>
+        <image name="close.png" width="16" height="16"/>
+        <image name="confirm.png" width="16" height="16"/>
+    </resources>
 </document>

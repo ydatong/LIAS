@@ -8,6 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewTodoViewController : UIViewController
+@protocol NewTodoViewDelegate <NSObject>
+
+- (void)newTodoVidwDidConfirm:(TodoItem*)todoItem editting:(BOOL)editting;
+
+@end
+
+@interface NewTodoViewController : BaseViewController
+
+@property (nonatomic, weak) id<NewTodoViewDelegate> delegate;
+@property (nonatomic, strong) NSDate *date;
+@property (nonatomic, strong) TodoItem *todoItem;
 
 @end

@@ -7,8 +7,13 @@
 //
 
 #import "SettingViewController.h"
+#import "SettingTableCell.h"
+#import "TabbarSortController.h"
 
 @interface SettingViewController ()
+{
+    NSArray *settingData;
+}
 
 @end
 
@@ -16,12 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self setupUI];
+    [self loadData];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -29,86 +30,114 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)setupUI {
+    [self.tableView registerNib:[UINib nibWithNibName:@"SettingTableCell" bundle:nil] forCellReuseIdentifier:@"settingCell"];
+}
+
+- (void)loadData {
+    
+    settingData = @[@[
+                        @{@"image":@"setting_word",@"title":@"签名",@"action":@""},
+                        @{@"image":@"setting_theme",@"title":@"主题",@"action":@""},
+                        @{@"image":@"setting_night",@"title":@"夜间模式",@"action":@""},
+//                        @{@"image":@"setting_sort",@"title":@"Tabbar顺序",@"action":@"sortTabbar"}
+                        ],
+                    @[
+                        @{@"image":@"setting_sync",@"title":@"同步设置",@"action":@""}
+                        ],
+                    @[
+                        @{@"image":@"setting_safe",@"title":@"密码及指纹解锁",@"action":@""}
+                        ],
+                    @[
+                        @{@"image":@"setting_trash",@"title":@"回收站",@"action":@""}
+                        ],
+                    @[
+                        @{@"image":@"setting_about",@"title":@"关于",@"action":@""}
+                        ]
+                    ];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+    return settingData.count;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
+    return [settingData[section] count];
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
+- (UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    SettingTableCell *cell = [tableView dequeueReusableCellWithIdentifier:@"settingCell"];
+    NSDictionary *info = settingData[indexPath.section][indexPath.row];
+    cell.titleLabel.text = info[@"title"];
+    cell.leftImageView.image = [UIImage imageNamed:info[@"image"]];
+    if ([info[@"title"] isEqualToString:@"Tabbar顺序"]) {
+        cell.rightLabel.hidden = NO;
+        cell.rightLabel.text = @"设置后重启APP生效";
+    }
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    return 20.0;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
+    return CGFLOAT_MIN;
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Table view delegate
-
-// In a xib-based application, navigation from a table can be handled in -tableView:didSelectRowAtIndexPath:
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Navigation logic may go here, for example:
-    // Create the next view controller.
-    <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:<#@"Nib name"#> bundle:nil];
-    
-    // Pass the selected object to the new view controller.
-    
-    // Push the view controller.
-    [self.navigationController pushViewController:detailViewController animated:YES];
+    NSDictionary *info = settingData[indexPath.section][indexPath.row];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    SEL selector = NSSelectorFromString(info[@"action"]);
+    if ([self respondsToSelector:selector]) {
+        [self performSelector:selector];
+    }
 }
-*/
 
-/*
-#pragma mark - Navigation
+#pragma mark -- action 
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (void)sortTabbar {
+    
+    TabbarSortController *sortVC = [[TabbarSortController alloc] initWithNibName:@"TabbarSortController" bundle:nil];
+    [self.navigationController pushViewController:sortVC animated:YES];
 }
-*/
+
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
