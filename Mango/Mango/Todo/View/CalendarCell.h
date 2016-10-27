@@ -1,13 +1,13 @@
 //
-//  CreateTodoView.h
+//  CalendarCell.h
 //  Mango
 //
-//  Created by 周永 on 16/10/20.
+//  Created by 周永 on 16/10/21.
 //  Copyright © 2016年 shuige. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-@interface NewTodoView : UIView
+@interface CalendarCell : UICollectionViewCell
 
 @end

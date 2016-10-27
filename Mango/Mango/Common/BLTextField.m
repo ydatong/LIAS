@@ -1,14 +1,14 @@
 //
-//  CreateTodoView.m
+//  BLTextField.m
 //  Mango
 //
-//  Created by 周永 on 16/10/20.
+//  Created by 周永 on 16/10/27.
 //  Copyright © 2016年 shuige. All rights reserved.
 //
 
-#import "NewTodoView.h"
+#import "BLTextField.h"
 
-@implementation NewTodoView
+@implementation BLTextField
 
 /*
 // Only override drawRect: if you perform custom drawing.
@@ -17,8 +17,5 @@
     // Drawing code
 }
 */
-- (IBAction)close:(id)sender {
-    [self removeFromSuperview];
-}
 
 @end
