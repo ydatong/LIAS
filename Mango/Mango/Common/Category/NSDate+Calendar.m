@@ -93,4 +93,11 @@ SGTime SGTimeMake(int year, int month, int day) {
     return calendar;
 }
 
+- (NSString*)formattedString:(NSString *)format {
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    dateFormatter.dateFormat = format;
+    dateFormatter.calendar = [self calendar];
+    return [dateFormatter stringFromDate:self];
+}
+
 @end

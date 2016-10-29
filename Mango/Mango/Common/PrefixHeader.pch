@@ -20,6 +20,7 @@
 #import "EmptyTableContentView.h"
 #import "BaseViewController.h"
 #import "SGOptions.h"
+#import "SGCircleView.h"
 #import "TimerItem+CoreDataClass.h"
 
 //define

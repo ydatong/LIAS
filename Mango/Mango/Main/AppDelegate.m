@@ -76,7 +76,7 @@
     if ([name isEqualToString:kTabbarOrderNameTimer]) {
         return [self navgationControllerWithTitle:@"定时"
                                             image:@"tabbar_timer"
-                               rootViewController:@"TimerViewController"];
+                               rootViewController:@"TimerViewControllerNew"];
     }
     
     if ([name isEqualToString:kTabbarOrderNameNote]) {

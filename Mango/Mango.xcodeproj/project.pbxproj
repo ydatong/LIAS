@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		253B856D1DC34A4600D4B62F /* SGCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 253B856C1DC34A4600D4B62F /* SGCircleView.m */; };
+		253B85701DC369A400D4B62F /* digital_8@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B856F1DC369A400D4B62F /* digital_8@2x.png */; };
+		253B857A1DC36DD400D4B62F /* digital_0@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85711DC36DD300D4B62F /* digital_0@2x.png */; };
+		253B857B1DC36DD400D4B62F /* digital_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85721DC36DD300D4B62F /* digital_1@2x.png */; };
+		253B857C1DC36DD400D4B62F /* digital_2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85731DC36DD300D4B62F /* digital_2@2x.png */; };
+		253B857D1DC36DD400D4B62F /* digital_3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85741DC36DD300D4B62F /* digital_3@2x.png */; };
+		253B857E1DC36DD400D4B62F /* digital_4@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85751DC36DD300D4B62F /* digital_4@2x.png */; };
+		253B857F1DC36DD400D4B62F /* digital_5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85761DC36DD300D4B62F /* digital_5@2x.png */; };
+		253B85801DC36DD400D4B62F /* digital_6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85771DC36DD300D4B62F /* digital_6@2x.png */; };
+		253B85811DC36DD400D4B62F /* digital_7@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85781DC36DD300D4B62F /* digital_7@2x.png */; };
+		253B85821DC36DD400D4B62F /* digital_9@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85791DC36DD300D4B62F /* digital_9@2x.png */; };
+		253B85891DC38B1400D4B62F /* timer_detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B85871DC38B1400D4B62F /* timer_detail@2x.png */; };
+		253B858C1DC38B6E00D4B62F /* timer_trash@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 253B858B1DC38B6E00D4B62F /* timer_trash@2x.png */; };
+		253B858F1DC3990300D4B62F /* TimerDetailView.m in Sources */ = {isa = PBXBuildFile; fileRef = 253B858E1DC3990300D4B62F /* TimerDetailView.m */; };
+		253B85911DC3991500D4B62F /* TimerDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 253B85901DC3991500D4B62F /* TimerDetailView.xib */; };
 		258517A81DBFACF8004C7B28 /* isover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 258517A71DBFACF8004C7B28 /* isover@2x.png */; };
 		258517AF1DC0EC9D004C7B28 /* CountdownViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 258517AD1DC0EC9D004C7B28 /* CountdownViewController.m */; };
 		258517B01DC0EC9D004C7B28 /* CountdownViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258517AE1DC0EC9D004C7B28 /* CountdownViewController.xib */; };
 		258517B51DC0FB90004C7B28 /* TimerItem+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 258517B21DC0FB90004C7B28 /* TimerItem+CoreDataClass.m */; };
 		258517B61DC0FB90004C7B28 /* TimerItem+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 258517B41DC0FB90004C7B28 /* TimerItem+CoreDataProperties.m */; };
-		258517BA1DC232B2004C7B28 /* TimerTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 258517B81DC232B2004C7B28 /* TimerTableCell.m */; };
-		258517BB1DC232B2004C7B28 /* TimerTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 258517B91DC232B2004C7B28 /* TimerTableCell.xib */; };
 		258517C01DC2348C004C7B28 /* border_countdown_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 258517BC1DC2348C004C7B28 /* border_countdown_1@2x.png */; };
 		258517C11DC2348C004C7B28 /* border_countdown@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 258517BD1DC2348C004C7B28 /* border_countdown@2x.png */; };
 		258517C21DC2348C004C7B28 /* border_timer_1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 258517BE1DC2348C004C7B28 /* border_timer_1@2x.png */; };
@@ -36,8 +49,6 @@
 		25B395551DB90EE600F86EF1 /* TodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B395531DB90EE600F86EF1 /* TodoViewController.xib */; };
 		25B395591DB90EF500F86EF1 /* NoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395571DB90EF500F86EF1 /* NoteViewController.m */; };
 		25B3955A1DB90EF500F86EF1 /* NoteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B395581DB90EF500F86EF1 /* NoteViewController.xib */; };
-		25B3955E1DB90F0800F86EF1 /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B3955C1DB90F0800F86EF1 /* TimerViewController.m */; };
-		25B3955F1DB90F0800F86EF1 /* TimerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25B3955D1DB90F0800F86EF1 /* TimerViewController.xib */; };
 		25B395681DB917D300F86EF1 /* add@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25B395671DB917D300F86EF1 /* add@2x.png */; };
 		25B395731DB91AE000F86EF1 /* UIView+Mango.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395721DB91AE000F86EF1 /* UIView+Mango.m */; };
 		25B395781DB9202700F86EF1 /* AnimationBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = 25B395771DB9202700F86EF1 /* AnimationBuilder.m */; };
@@ -102,6 +113,10 @@
 		25F2B1321DC253BF004C5FE4 /* reward@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F2B1311DC253BF004C5FE4 /* reward@2x.png */; };
 		25F2B1341DC254D3004C5FE4 /* timer_finished@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F2B1331DC254D3004C5FE4 /* timer_finished@2x.png */; };
 		25F2B1381DC256C8004C5FE4 /* jieshu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25F2B1371DC256C8004C5FE4 /* jieshu@3x.png */; };
+		25F2B13C1DC340F4004C5FE4 /* TimerCollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F2B13A1DC340F4004C5FE4 /* TimerCollectionCell.m */; };
+		25F2B13D1DC340F4004C5FE4 /* TimerCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25F2B13B1DC340F4004C5FE4 /* TimerCollectionCell.xib */; };
+		25F2B1411DC34352004C5FE4 /* TimerViewControllerNew.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F2B13F1DC34352004C5FE4 /* TimerViewControllerNew.m */; };
+		25F2B1421DC34352004C5FE4 /* TimerViewControllerNew.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25F2B1401DC34352004C5FE4 /* TimerViewControllerNew.xib */; };
 		25FBE69F1DBF8ECF00280720 /* detail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 25FBE69E1DBF8ECF00280720 /* detail@2x.png */; };
 		25FBE6A31DBF94BB00280720 /* SGOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 25FBE6A21DBF94BB00280720 /* SGOptions.m */; };
 /* End PBXBuildFile section */
@@ -124,6 +139,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		253B856B1DC34A4600D4B62F /* SGCircleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGCircleView.h; sourceTree = "<group>"; };
+		253B856C1DC34A4600D4B62F /* SGCircleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGCircleView.m; sourceTree = "<group>"; };
+		253B856F1DC369A400D4B62F /* digital_8@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_8@2x.png"; sourceTree = "<group>"; };
+		253B85711DC36DD300D4B62F /* digital_0@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_0@2x.png"; sourceTree = "<group>"; };
+		253B85721DC36DD300D4B62F /* digital_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_1@2x.png"; sourceTree = "<group>"; };
+		253B85731DC36DD300D4B62F /* digital_2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_2@2x.png"; sourceTree = "<group>"; };
+		253B85741DC36DD300D4B62F /* digital_3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_3@2x.png"; sourceTree = "<group>"; };
+		253B85751DC36DD300D4B62F /* digital_4@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_4@2x.png"; sourceTree = "<group>"; };
+		253B85761DC36DD300D4B62F /* digital_5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_5@2x.png"; sourceTree = "<group>"; };
+		253B85771DC36DD300D4B62F /* digital_6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_6@2x.png"; sourceTree = "<group>"; };
+		253B85781DC36DD300D4B62F /* digital_7@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_7@2x.png"; sourceTree = "<group>"; };
+		253B85791DC36DD300D4B62F /* digital_9@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "digital_9@2x.png"; sourceTree = "<group>"; };
+		253B85871DC38B1400D4B62F /* timer_detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer_detail@2x.png"; sourceTree = "<group>"; };
+		253B858B1DC38B6E00D4B62F /* timer_trash@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer_trash@2x.png"; sourceTree = "<group>"; };
+		253B858D1DC3990300D4B62F /* TimerDetailView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerDetailView.h; sourceTree = "<group>"; };
+		253B858E1DC3990300D4B62F /* TimerDetailView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerDetailView.m; sourceTree = "<group>"; };
+		253B85901DC3991500D4B62F /* TimerDetailView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerDetailView.xib; sourceTree = "<group>"; };
 		258517A71DBFACF8004C7B28 /* isover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "isover@2x.png"; sourceTree = "<group>"; };
 		258517AC1DC0EC9D004C7B28 /* CountdownViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownViewController.h; sourceTree = "<group>"; };
 		258517AD1DC0EC9D004C7B28 /* CountdownViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownViewController.m; sourceTree = "<group>"; };
@@ -132,9 +164,6 @@
 		258517B21DC0FB90004C7B28 /* TimerItem+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TimerItem+CoreDataClass.m"; sourceTree = "<group>"; };
 		258517B31DC0FB90004C7B28 /* TimerItem+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TimerItem+CoreDataProperties.h"; sourceTree = "<group>"; };
 		258517B41DC0FB90004C7B28 /* TimerItem+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TimerItem+CoreDataProperties.m"; sourceTree = "<group>"; };
-		258517B71DC232B1004C7B28 /* TimerTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerTableCell.h; sourceTree = "<group>"; };
-		258517B81DC232B2004C7B28 /* TimerTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerTableCell.m; sourceTree = "<group>"; };
-		258517B91DC232B2004C7B28 /* TimerTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerTableCell.xib; sourceTree = "<group>"; };
 		258517BC1DC2348C004C7B28 /* border_countdown_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "border_countdown_1@2x.png"; sourceTree = "<group>"; };
 		258517BD1DC2348C004C7B28 /* border_countdown@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "border_countdown@2x.png"; sourceTree = "<group>"; };
 		258517BE1DC2348C004C7B28 /* border_timer_1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "border_timer_1@2x.png"; sourceTree = "<group>"; };
@@ -171,9 +200,6 @@
 		25B395561DB90EF500F86EF1 /* NoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoteViewController.h; sourceTree = "<group>"; };
 		25B395571DB90EF500F86EF1 /* NoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoteViewController.m; sourceTree = "<group>"; };
 		25B395581DB90EF500F86EF1 /* NoteViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteViewController.xib; sourceTree = "<group>"; };
-		25B3955B1DB90F0800F86EF1 /* TimerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
-		25B3955C1DB90F0800F86EF1 /* TimerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
-		25B3955D1DB90F0800F86EF1 /* TimerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerViewController.xib; sourceTree = "<group>"; };
 		25B395671DB917D300F86EF1 /* add@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "add@2x.png"; sourceTree = "<group>"; };
 		25B395711DB91AE000F86EF1 /* UIView+Mango.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Mango.h"; sourceTree = "<group>"; };
 		25B395721DB91AE000F86EF1 /* UIView+Mango.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Mango.m"; sourceTree = "<group>"; };
@@ -255,6 +281,12 @@
 		25F2B1311DC253BF004C5FE4 /* reward@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "reward@2x.png"; sourceTree = "<group>"; };
 		25F2B1331DC254D3004C5FE4 /* timer_finished@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "timer_finished@2x.png"; sourceTree = "<group>"; };
 		25F2B1371DC256C8004C5FE4 /* jieshu@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "jieshu@3x.png"; sourceTree = "<group>"; };
+		25F2B1391DC340F4004C5FE4 /* TimerCollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerCollectionCell.h; sourceTree = "<group>"; };
+		25F2B13A1DC340F4004C5FE4 /* TimerCollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerCollectionCell.m; sourceTree = "<group>"; };
+		25F2B13B1DC340F4004C5FE4 /* TimerCollectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerCollectionCell.xib; sourceTree = "<group>"; };
+		25F2B13E1DC34352004C5FE4 /* TimerViewControllerNew.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimerViewControllerNew.h; sourceTree = "<group>"; };
+		25F2B13F1DC34352004C5FE4 /* TimerViewControllerNew.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimerViewControllerNew.m; sourceTree = "<group>"; };
+		25F2B1401DC34352004C5FE4 /* TimerViewControllerNew.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TimerViewControllerNew.xib; sourceTree = "<group>"; };
 		25FBE69E1DBF8ECF00280720 /* detail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "detail@2x.png"; sourceTree = "<group>"; };
 		25FBE6A11DBF94BB00280720 /* SGOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGOptions.h; sourceTree = "<group>"; };
 		25FBE6A21DBF94BB00280720 /* SGOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGOptions.m; sourceTree = "<group>"; };
@@ -285,6 +317,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		253B856E1DC369A400D4B62F /* digital */ = {
+			isa = PBXGroup;
+			children = (
+				253B85711DC36DD300D4B62F /* digital_0@2x.png */,
+				253B85721DC36DD300D4B62F /* digital_1@2x.png */,
+				253B85731DC36DD300D4B62F /* digital_2@2x.png */,
+				253B85741DC36DD300D4B62F /* digital_3@2x.png */,
+				253B85751DC36DD300D4B62F /* digital_4@2x.png */,
+				253B85761DC36DD300D4B62F /* digital_5@2x.png */,
+				253B85771DC36DD300D4B62F /* digital_6@2x.png */,
+				253B85781DC36DD300D4B62F /* digital_7@2x.png */,
+				253B85791DC36DD300D4B62F /* digital_9@2x.png */,
+				253B856F1DC369A400D4B62F /* digital_8@2x.png */,
+			);
+			name = digital;
+			path = number;
+			sourceTree = "<group>";
+		};
 		25B394E11DB8FE8100F86EF1 = {
 			isa = PBXGroup;
 			children = (
@@ -451,12 +501,12 @@
 		25B3952F1DB8FF9400F86EF1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				25B3955B1DB90F0800F86EF1 /* TimerViewController.h */,
-				25B3955C1DB90F0800F86EF1 /* TimerViewController.m */,
-				25B3955D1DB90F0800F86EF1 /* TimerViewController.xib */,
 				258517AC1DC0EC9D004C7B28 /* CountdownViewController.h */,
 				258517AD1DC0EC9D004C7B28 /* CountdownViewController.m */,
 				258517AE1DC0EC9D004C7B28 /* CountdownViewController.xib */,
+				25F2B13E1DC34352004C5FE4 /* TimerViewControllerNew.h */,
+				25F2B13F1DC34352004C5FE4 /* TimerViewControllerNew.m */,
+				25F2B1401DC34352004C5FE4 /* TimerViewControllerNew.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -475,9 +525,14 @@
 		25B395311DB8FF9400F86EF1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				258517B71DC232B1004C7B28 /* TimerTableCell.h */,
-				258517B81DC232B2004C7B28 /* TimerTableCell.m */,
-				258517B91DC232B2004C7B28 /* TimerTableCell.xib */,
+				25F2B1391DC340F4004C5FE4 /* TimerCollectionCell.h */,
+				25F2B13A1DC340F4004C5FE4 /* TimerCollectionCell.m */,
+				25F2B13B1DC340F4004C5FE4 /* TimerCollectionCell.xib */,
+				253B856B1DC34A4600D4B62F /* SGCircleView.h */,
+				253B856C1DC34A4600D4B62F /* SGCircleView.m */,
+				253B858D1DC3990300D4B62F /* TimerDetailView.h */,
+				253B858E1DC3990300D4B62F /* TimerDetailView.m */,
+				253B85901DC3991500D4B62F /* TimerDetailView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -575,6 +630,9 @@
 		25B395401DB902A500F86EF1 /* Timer */ = {
 			isa = PBXGroup;
 			children = (
+				253B85871DC38B1400D4B62F /* timer_detail@2x.png */,
+				253B858B1DC38B6E00D4B62F /* timer_trash@2x.png */,
+				253B856E1DC369A400D4B62F /* digital */,
 				25F2B1371DC256C8004C5FE4 /* jieshu@3x.png */,
 				25F2B1331DC254D3004C5FE4 /* timer_finished@2x.png */,
 				25F2B1311DC253BF004C5FE4 /* reward@2x.png */,
@@ -822,12 +880,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				253B85911DC3991500D4B62F /* TimerDetailView.xib in Resources */,
 				25F2B12B1DC25196004C5FE4 /* timer_completed@2x.png in Resources */,
+				253B857C1DC36DD400D4B62F /* digital_2@2x.png in Resources */,
 				25BAF3CC1DBCA4B30050D2E4 /* setting_about@2x.png in Resources */,
 				25B3957E1DB921EE00F86EF1 /* close@2x.png in Resources */,
 				25FBE69F1DBF8ECF00280720 /* detail@2x.png in Resources */,
+				253B85821DC36DD400D4B62F /* digital_9@2x.png in Resources */,
+				253B85811DC36DD400D4B62F /* digital_7@2x.png in Resources */,
 				25BAF3801DBC7EAE0050D2E4 /* fightting@3x.png in Resources */,
-				258517BB1DC232B2004C7B28 /* TimerTableCell.xib in Resources */,
 				25B395501DB90E8800F86EF1 /* launch.jpg in Resources */,
 				25BAF35C1DBB88A70050D2E4 /* unselect@2x.png in Resources */,
 				25BAF3CE1DBCA4B30050D2E4 /* setting_night@2x.png in Resources */,
@@ -843,6 +904,7 @@
 				25BAF3E21DBCEC180050D2E4 /* setting_word@2x.png in Resources */,
 				25BAF3721DBC771A0050D2E4 /* corner_finished@3x.png in Resources */,
 				25BAF3641DBBA3DE0050D2E4 /* priority_today@2x.png in Resources */,
+				25F2B13D1DC340F4004C5FE4 /* TimerCollectionCell.xib in Resources */,
 				25BAF3AF1DBC932B0050D2E4 /* NewTodoViewController.xib in Resources */,
 				25B394FD1DB8FE8200F86EF1 /* Assets.xcassets in Resources */,
 				25BAF3731DBC771A0050D2E4 /* corner_todo@2x.png in Resources */,
@@ -852,39 +914,48 @@
 				25BAF3A11DBC91A20050D2E4 /* tabbar_todo@2x.png in Resources */,
 				25BAF38F1DBC8F9D0050D2E4 /* tabbar_setting@2x.png in Resources */,
 				25B395841DB996FE00F86EF1 /* needle@2x.png in Resources */,
+				253B857B1DC36DD400D4B62F /* digital_1@2x.png in Resources */,
 				25BAF3741DBC771A0050D2E4 /* corner_todo@3x.png in Resources */,
 				25B3958D1DB9CBAD00F86EF1 /* pre@2x.png in Resources */,
 				25BAF3D61DBCA4B30050D2E4 /* setting_theme@2x.png in Resources */,
 				25BAF37F1DBC7EAE0050D2E4 /* fightting@2x.png in Resources */,
+				253B85891DC38B1400D4B62F /* timer_detail@2x.png in Resources */,
 				25BAF37C1DBC7C460050D2E4 /* today@3x.png in Resources */,
 				258517B01DC0EC9D004C7B28 /* CountdownViewController.xib in Resources */,
 				25B3955A1DB90EF500F86EF1 /* NoteViewController.xib in Resources */,
 				25B395891DB9CAC100F86EF1 /* MangoCalendar.xib in Resources */,
 				25BAF3E01DBCD1860050D2E4 /* TabbarSortController.xib in Resources */,
-				25B3955F1DB90F0800F86EF1 /* TimerViewController.xib in Resources */,
 				25BAF3771DBC78330050D2E4 /* circle@2x.png in Resources */,
 				258517C11DC2348C004C7B28 /* border_countdown@2x.png in Resources */,
 				25F2B1321DC253BF004C5FE4 /* reward@2x.png in Resources */,
 				25BAF3851DBC837E0050D2E4 /* EmptyTableContentView.xib in Resources */,
+				253B857A1DC36DD400D4B62F /* digital_0@2x.png in Resources */,
 				25BAF3A91DBC922D0050D2E4 /* tabbar_timer@2x.png in Resources */,
+				25F2B1421DC34352004C5FE4 /* TimerViewControllerNew.xib in Resources */,
 				25B395681DB917D300F86EF1 /* add@2x.png in Resources */,
 				25BAF3611DBBA3DE0050D2E4 /* priority_important@2x.png in Resources */,
 				25BAF3781DBC78330050D2E4 /* circle@3x.png in Resources */,
+				253B858C1DC38B6E00D4B62F /* timer_trash@2x.png in Resources */,
 				25BAF39D1DBC90F70050D2E4 /* tabbar_plan@2x.png in Resources */,
 				258517C01DC2348C004C7B28 /* border_countdown_1@2x.png in Resources */,
+				253B857F1DC36DD400D4B62F /* digital_5@2x.png in Resources */,
 				25F2B1381DC256C8004C5FE4 /* jieshu@3x.png in Resources */,
 				25B3957F1DB921EE00F86EF1 /* confirm@2x.png in Resources */,
 				258517C31DC2348C004C7B28 /* border_timer@2x.png in Resources */,
 				25BAF3D81DBCA4B30050D2E4 /* setting_trash@2x.png in Resources */,
 				25BAF3A71DBC922D0050D2E4 /* tabbar_note@2x.png in Resources */,
+				253B85701DC369A400D4B62F /* digital_8@2x.png in Resources */,
 				25BAF35B1DBB88A70050D2E4 /* selected@2x.png in Resources */,
 				25BAF3D21DBCA4B30050D2E4 /* setting_sort@2x.png in Resources */,
 				25F2B1341DC254D3004C5FE4 /* timer_finished@2x.png in Resources */,
+				253B85801DC36DD400D4B62F /* digital_6@2x.png in Resources */,
 				25BAF3D01DBCA4B30050D2E4 /* setting_safe@2x.png in Resources */,
+				253B857D1DC36DD400D4B62F /* digital_3@2x.png in Resources */,
 				258517A81DBFACF8004C7B28 /* isover@2x.png in Resources */,
 				25BAF34C1DBAFBC40050D2E4 /* MonthPickerView.xib in Resources */,
 				25A2FCD71DB9F55F00584487 /* CalendarCell.xib in Resources */,
 				25BAF3BB1DBC9E920050D2E4 /* SettingTableCell.xib in Resources */,
+				253B857E1DC36DD400D4B62F /* digital_4@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -918,7 +989,6 @@
 				25B395781DB9202700F86EF1 /* AnimationBuilder.m in Sources */,
 				25BAF34A1DBAFBB70050D2E4 /* MonthPickerVIew.m in Sources */,
 				25B395901DB9D36500F86EF1 /* StyleBuilder.m in Sources */,
-				25B3955E1DB90F0800F86EF1 /* TimerViewController.m in Sources */,
 				25B395591DB90EF500F86EF1 /* NoteViewController.m in Sources */,
 				25B395541DB90EE600F86EF1 /* TodoViewController.m in Sources */,
 				25B395391DB900C700F86EF1 /* BaseNavigationController.m in Sources */,
@@ -928,7 +998,7 @@
 				25BAF3831DBC836B0050D2E4 /* EmptyTableContentView.m in Sources */,
 				25BAF3B31DBC991C0050D2E4 /* SettingViewController.m in Sources */,
 				25B395821DB932AF00F86EF1 /* TodoItem.m in Sources */,
-				258517BA1DC232B2004C7B28 /* TimerTableCell.m in Sources */,
+				253B858F1DC3990300D4B62F /* TimerDetailView.m in Sources */,
 				25B394FB1DB8FE8200F86EF1 /* Mango.xcdatamodeld in Sources */,
 				25B395731DB91AE000F86EF1 /* UIView+Mango.m in Sources */,
 				25BAF3AE1DBC932B0050D2E4 /* NewTodoViewController.m in Sources */,
@@ -936,10 +1006,13 @@
 				25BAF3BA1DBC9E920050D2E4 /* SettingTableCell.m in Sources */,
 				25B394EF1DB8FE8200F86EF1 /* main.m in Sources */,
 				25A2FCD61DB9F55F00584487 /* CalendarCell.m in Sources */,
+				253B856D1DC34A4600D4B62F /* SGCircleView.m in Sources */,
 				25BAF3531DBB55B40050D2E4 /* UIFont+Ext.m in Sources */,
+				25F2B13C1DC340F4004C5FE4 /* TimerCollectionCell.m in Sources */,
 				25B395361DB8FF9400F86EF1 /* AppDelegate.m in Sources */,
 				25B395871DB9CAB200F86EF1 /* MangoCalendar.m in Sources */,
 				258517B61DC0FB90004C7B28 /* TimerItem+CoreDataProperties.m in Sources */,
+				25F2B1411DC34352004C5FE4 /* TimerViewControllerNew.m in Sources */,
 				25F2B1281DC2455F004C5FE4 /* BLTextField.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

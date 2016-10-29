@@ -38,4 +38,6 @@ typedef struct SGTime SGTime;
 
 - (SGTime)toChineseCalendarDate;
 
+- (NSString*)formattedString:(NSString*)format;
+
 @end
