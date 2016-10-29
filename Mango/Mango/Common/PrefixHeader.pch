@@ -1,0 +1,36 @@
+//
+//  PrefixHeader.pch
+//  Mango
+//
+//  Created by 周永 on 16/10/20.
+//  Copyright © 2016年 shuige. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+//import
+#import "UIView+Mango.h"
+#import "TodoItem.h"
+#import "StyleBuilder.h"
+#import "NSDate+Calendar.h"
+#import "AnimationBuilder.h"
+#import "DataManager.h"
+#import <objc/runtime.h>
+#import "EmptyTableContentView.h"
+#import "BaseViewController.h"
+#import "SGOptions.h"
+#import "SGCircleView.h"
+#import "TimerItem+CoreDataClass.h"
+
+//define
+#define AppWindow [UIApplication sharedApplication].keyWindow
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
+#define ScreenBounds [UIScreen mainScreen].bounds
+
+#define MainColor [[StyleBuilder builder] mainColor]
+#define DefaultFontWithSize(size) [[StyleBuilder builder] defaultFontWithSize:size]
+
+#define kTabbarOrderInfoKey @"tabbarOrderInfo"
+#endif /* PrefixHeader_pch */

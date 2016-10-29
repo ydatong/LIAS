@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TimerCollectionCell">
+            <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="150" height="250"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LzL-0e-5F9">
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="ofQ-HF-9Mm"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F18-PY-SZJ">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="MF0-Tm-Ax4"/>
+                            <constraint firstAttribute="width" constant="30" id="Yzp-zS-JF4"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="timer_detail.png"/>
+                        <connections>
+                            <action selector="showDetailInfo:" destination="gTV-IL-0wX" eventType="touchUpInside" id="RKb-4T-qrR"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4bf-ew-Iet">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="bqb-0a-bYq"/>
+                            <constraint firstAttribute="height" constant="30" id="s4W-oD-Cvf"/>
+                        </constraints>
+                        <state key="normal" title="Button" backgroundImage="timer_trash.png"/>
+                        <connections>
+                            <action selector="delete:" destination="gTV-IL-0wX" eventType="touchUpInside" id="2Px-MO-kc4"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dwr-x8-UIC">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2017-01-01" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKe-Nt-4j8">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yy3-iw-UaC" customClass="SGCircleView">
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="天" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lJN-Li-erD">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="QLu-rQ-jCP"/>
+                                            <constraint firstAttribute="height" constant="20" id="Wji-A3-2jc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="lJN-Li-erD" firstAttribute="centerX" secondItem="Yy3-iw-UaC" secondAttribute="centerX" id="nh1-mk-fYb"/>
+                                    <constraint firstAttribute="width" secondItem="Yy3-iw-UaC" secondAttribute="height" multiplier="1:1" id="zJc-Ho-zkC"/>
+                                    <constraint firstAttribute="bottom" secondItem="lJN-Li-erD" secondAttribute="bottom" constant="5" id="zrM-a9-AOy"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="timer_finished.png" translatesAutoresizingMaskIntoConstraints="NO" id="kFS-Yc-Og3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="a1O-aP-EHs"/>
+                                    <constraint firstAttribute="height" constant="50" id="bwW-Zx-Vmh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="距离2017年春节" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S5u-pV-4Fj">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="txl-nT-tVn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gKe-Nt-4j8" firstAttribute="centerX" secondItem="dwr-x8-UIC" secondAttribute="centerX" id="Fvl-IU-91y"/>
+                            <constraint firstAttribute="trailing" secondItem="S5u-pV-4Fj" secondAttribute="trailing" constant="10" id="Ioc-Rf-WQA"/>
+                            <constraint firstItem="Yy3-iw-UaC" firstAttribute="centerY" secondItem="dwr-x8-UIC" secondAttribute="centerY" id="NiF-1V-hMt"/>
+                            <constraint firstAttribute="bottom" secondItem="kFS-Yc-Og3" secondAttribute="bottom" constant="10" id="ST4-Z4-aDR"/>
+                            <constraint firstItem="Yy3-iw-UaC" firstAttribute="top" secondItem="S5u-pV-4Fj" secondAttribute="bottom" constant="15" id="SwI-Zb-as1"/>
+                            <constraint firstAttribute="bottom" secondItem="gKe-Nt-4j8" secondAttribute="bottom" constant="5" id="W7A-ou-Xn7"/>
+                            <constraint firstAttribute="trailing" secondItem="kFS-Yc-Og3" secondAttribute="trailing" constant="10" id="dfa-xv-FaX"/>
+                            <constraint firstItem="S5u-pV-4Fj" firstAttribute="top" secondItem="dwr-x8-UIC" secondAttribute="top" constant="5" id="fVz-1b-PNU"/>
+                            <constraint firstItem="Yy3-iw-UaC" firstAttribute="centerX" secondItem="dwr-x8-UIC" secondAttribute="centerX" id="fev-nW-4Ef"/>
+                            <constraint firstItem="S5u-pV-4Fj" firstAttribute="leading" secondItem="dwr-x8-UIC" secondAttribute="leading" constant="10" id="sm5-aE-Xeq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="LzL-0e-5F9" secondAttribute="trailing" id="3ew-qu-VN3"/>
+                <constraint firstAttribute="bottom" secondItem="dwr-x8-UIC" secondAttribute="bottom" id="4lk-rt-ML2"/>
+                <constraint firstItem="dwr-x8-UIC" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="CTm-YY-20T"/>
+                <constraint firstAttribute="trailing" secondItem="dwr-x8-UIC" secondAttribute="trailing" id="KDa-Gu-XRg"/>
+                <constraint firstItem="4bf-ew-Iet" firstAttribute="top" secondItem="LzL-0e-5F9" secondAttribute="bottom" constant="20" id="Leo-I9-3tZ"/>
+                <constraint firstItem="dwr-x8-UIC" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="V1q-ft-Lsa"/>
+                <constraint firstItem="LzL-0e-5F9" firstAttribute="top" secondItem="F18-PY-SZJ" secondAttribute="bottom" constant="20" id="ckl-3D-dxU"/>
+                <constraint firstItem="LzL-0e-5F9" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="eZR-Df-0LD"/>
+                <constraint firstItem="LzL-0e-5F9" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="hVC-ZB-JMB"/>
+                <constraint firstAttribute="trailing" secondItem="4bf-ew-Iet" secondAttribute="trailing" constant="5" id="jZK-qT-YEW"/>
+                <constraint firstAttribute="trailing" secondItem="F18-PY-SZJ" secondAttribute="trailing" constant="5" id="nSl-W1-2KK"/>
+            </constraints>
+            <size key="customSize" width="147" height="224"/>
+            <connections>
+                <outlet property="backView" destination="dwr-x8-UIC" id="PcM-ID-aS3"/>
+                <outlet property="dayView" destination="Yy3-iw-UaC" id="6Gy-oR-4DY"/>
+                <outlet property="deleteBtn" destination="4bf-ew-Iet" id="FhO-Iy-Vk0"/>
+                <outlet property="detailBtn" destination="F18-PY-SZJ" id="mbd-oy-p6I"/>
+                <outlet property="statusImg" destination="kFS-Yc-Og3" id="hGW-zm-iw9"/>
+                <outlet property="timeLabel" destination="gKe-Nt-4j8" id="VK6-ie-YJ3"/>
+                <outlet property="titleLabel" destination="S5u-pV-4Fj" id="Nx6-5W-WlQ"/>
+            </connections>
+            <point key="canvasLocation" x="-116" y="-38"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="timer_detail.png" width="32" height="32"/>
+        <image name="timer_finished.png" width="32" height="32"/>
+        <image name="timer_trash.png" width="32" height="32"/>
+    </resources>
+</document>
